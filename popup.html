@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Auto Like</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>❤️ X Auto Like</h1>
+    </header>
+
+    <div class="toggle-section">
+      <label class="toggle-wrapper">
+        <span class="toggle-label">Enable</span>
+        <div class="toggle">
+          <input type="checkbox" id="enableToggle">
+          <span class="slider"></span>
+        </div>
+      </label>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat">
+        <span class="stat-value" id="likesCount">0</span>
+        <span class="stat-label">Today</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="sessionCount">0</span>
+        <span class="stat-label">Session</span>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h2>👤 Profile</h2>
+      <div class="setting-row username-row">
+        <div class="username-input-wrapper">
+          <span class="at-symbol">@</span>
+          <input type="text" id="username" placeholder="your username">
+        </div>
+      </div>
+      <p class="hint">Won't like your own tweets</p>
+    </div>
+
+    <div class="settings-section">
+      <h2>⚙️ Mode</h2>
+      
+      <div class="setting-row">
+        <label>Like Mode</label>
+        <select id="likeMode">
+          <option value="hover">On Hover</option>
+          <option value="auto">Auto (All Visible)</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <label>Active On</label>
+        <select id="pageMode">
+          <option value="all">All Pages</option>
+          <option value="home">Home Only</option>
+          <option value="following">Following Only</option>
+          <option value="both">Home + Following</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <label>Auto Scroll</label>
+        <select id="autoScroll">
+          <option value="off">Off</option>
+          <option value="slow">Slow</option>
+          <option value="medium">Medium</option>
+          <option value="fast">Fast</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h2>⏱️ Speed</h2>
+      
+      <div class="setting-row">
+        <label>Min Delay (sec)</label>
+        <input type="number" id="minDelay" min="0.5" max="10" step="0.5" value="1">
+      </div>
+
+      <div class="setting-row">
+        <label>Max Delay (sec)</label>
+        <input type="number" id="maxDelay" min="1" max="30" step="0.5" value="3">
+      </div>
+
+      <div class="setting-row">
+        <label>Max Likes/Hour</label>
+        <input type="number" id="maxLikes" min="10" max="200" value="60">
+      </div>
+
+      <div class="setting-row">
+        <label>Debug Mode</label>
+        <select id="debugMode">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="saveBtn" class="btn primary">Save</button>
+      <button id="resetBtn" class="btn secondary">Reset</button>
+    </div>
+
+    <footer>
+      <p class="status" id="status">Ready</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
