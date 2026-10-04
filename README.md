@@ -111,3 +111,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ## License
 
 MIT License - feel free to modify and share!
+
+## Author
+
+Author: [rajivranjanmars](https://rajivranjana.in).
