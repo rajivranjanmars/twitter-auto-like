@@ -114,4 +114,4 @@ MIT License - feel free to modify and share!
 
 ## Author
 
-Author: [rajivranjanmars](https://rajivranjana.in).
+Author: [Rajiv Ranjan](https://rajivranjan.in).
